@@ -31,8 +31,8 @@ def menu():
     if op==4:
         pass
     if op==5:
-        pass
-
+        print('\n Volte sempre ! :)')
+        exit()
     else:
         print('valor invalido, por favor tente novamente!')
         sleep(1)

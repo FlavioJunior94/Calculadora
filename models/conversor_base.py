@@ -22,7 +22,8 @@ def menu_base():
             print('dado invalido! tente novamente.')
 
     if op==1:
-        pass
+        print('voce escolheu a opção 1')
+        menu_base()
     if op==2:
         pass
     if op==3:
