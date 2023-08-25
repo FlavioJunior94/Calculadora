@@ -1,0 +1,7 @@
+calculadora de base
+
+menu
+num= (o valor fornecido esta na base ?)
+decimal
+binario
+hexagonal
