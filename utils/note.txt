@@ -5,3 +5,5 @@ num= (o valor fornecido esta na base ?)
 decimal
 binario
 hexagonal
+
+note teste

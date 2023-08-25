@@ -32,7 +32,7 @@ def menu():
         pass
     if op==5:
         pass
-    
+
     else:
         print('valor invalido, por favor tente novamente!')
         sleep(1)
