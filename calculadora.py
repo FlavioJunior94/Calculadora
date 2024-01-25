@@ -1,4 +1,3 @@
-from utils import ops
 from models import operacoes_simples, conversor_base
 from time import sleep
 def menu():
@@ -8,8 +7,8 @@ def menu():
         ================================
         =======ESCOLHA A OPERAÇÃO=======
         ================================
-        1 - OPERAÇÕES SIMPLES ( + - * / )
-        2 - CONVERSOR BASE ( BINARIO, HEXAGONAL, ETC...)
+        1 - OPERAÇÕES SIMPLES( +-*/ )
+        2 - CONVERSOR BASE
         3 - CONVERSOR DE MOEDA
         4 - BASKARA
         5 - FECHAR CALCULADORA
