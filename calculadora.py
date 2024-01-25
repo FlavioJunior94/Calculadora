@@ -2,7 +2,7 @@ from models import operacoes_simples, conversor_base
 from time import sleep
 def menu():
     print("""
-        ================================
+        =========-=======================
         ==========CALCULADORA ==========
         ================================
         =======ESCOLHA A OPERAÇÃO=======
