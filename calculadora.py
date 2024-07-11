@@ -10,9 +10,9 @@ def menu():
         1 - OPERAÇÕES SIMPLES( +-*/ )
         2 - CONVERSOR BASE
         3 - CONVERSOR DE MOEDA
-        4 - BASKARA
-        5 - FECHAR CALCULADORA
-        6 - GERADOR DE SENHAS
+        4 - BHASKARA
+        5 - GERADOR DE SENHAS
+        6 - FECHAR CALCULADORA 
         ================================
         """)
     while True:
@@ -30,10 +30,10 @@ def menu():
         pass
     if op==4:
         pass
-    if op==5:
+    if op==6:
         print('\n Volte sempre ! :)')
         exit()
-    if op==6:
+    if op==5:
         while True:
             try:
                 tam_senha=int(input('Insira o tamanho da sua senha: '))

@@ -50,7 +50,22 @@ conversões:
             print('O valor informado não é binario')
             sleep(1.8)
             menu_base()
+
     if op==3:
+        num=input('Numero em Hexadecimal: ')
+        if base.if_hexadecimal(num)==True:
+            num =int(num,16)
+            print(f"""\n
+conversões:
+ -decimal: {num}
+ -binario: {base.binario(num)}
+            """)
+            sleep(1.8)
+            menu_base()
+        else:
+            print('O valor informado não é binario')
+            sleep(1.8)
+            menu_base()
         pass
     if op==4:
         calculadora.menu()

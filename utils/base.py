@@ -11,6 +11,13 @@ def if_binario(x):
     except:
         return False
 
+def if_hexadecimal(x):
+    try:
+        int(x,16)
+        return True
+    except:
+        return False
+
 def decimal(x):
     decimal_num=int(x,2)
     return decimal_num
