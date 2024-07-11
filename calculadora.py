@@ -1,4 +1,4 @@
-from models import operacoes_simples, conversor_base
+from models import operacoes_simples, conversor_base, gerador_senha
 from time import sleep
 def menu():
     print("""
@@ -12,6 +12,7 @@ def menu():
         3 - CONVERSOR DE MOEDA
         4 - BASKARA
         5 - FECHAR CALCULADORA
+        6 - GERADOR DE SENHAS
         ================================
         """)
     while True:
@@ -32,6 +33,16 @@ def menu():
     if op==5:
         print('\n Volte sempre ! :)')
         exit()
+    if op==6:
+        while True:
+            try:
+                tam_senha=int(input('Insira o tamanho da sua senha: '))
+                break
+            except:
+                print('dado invalido! tente novamente.')
+        gerador_senha.gerador_senha(tam_senha)
+        sleep(1)
+        menu()
     else:
         print('valor invalido, por favor tente novamente!')
         sleep(1)

@@ -7,6 +7,7 @@ Bem-vindo ao repositório da Calculadora Multifuncional em Python! Esta é uma c
 * Conversão de Moeda: Converta entre diferentes moedas com taxas de câmbio atualizadas. (Taxas de câmbio precisam ser atualizadas manualmente ou utilizando uma API externa.)
 * Conversor de Base: Converta números entre decimal, binário e hexadecimal, permitindo uma fácil visualização e manipulação de diferentes sistemas numéricos.
 * Resolução de Equação Quadrática: Utilize a fórmula de Bhaskara para resolver equações quadráticas, fornecendo as raízes reais ou complexas da equação.
+* NOVO RECURSO: gerador de senhas, escolha o tamanho da sua senha, e o programa irá gerar uma senha misturando caracteres, numeros e simbolos, criando assim uma senha forte e segura.
 
 ## Como Utilizar
 * Execute o arquivo calculadora.py utilizando o Python:
