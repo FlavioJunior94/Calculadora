@@ -8,4 +8,4 @@ print(sum(x))
 
 conversor_base.menu_base()"""
 
-gerador_senha.gerador_senha()
+gerador_senha.gerador_senha(2)
