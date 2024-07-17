@@ -1,5 +1,5 @@
 from utils import base
-from models import conversor_base, gerador_senha
+from models import conversor_base, gerador_senha, cotacao
 import calculadora
 
 #print(numeros())
@@ -22,8 +22,4 @@ def test(numero):
 
 print(test(numero))"""
 
-numero='ea'
-numero=int(numero,16)
-
-print(type(numero))
-print(numero)
+cotacao.cotar()

@@ -6,15 +6,15 @@ __name__=='__operacoes_simples__'
 
 def menu_ops():
     print("""
-================================
-=======ESCOLHA A OPERAÇÃO=======
-================================
-1 - ADIÇÃO
-2 - SUBTRAÇÃO
-3 - MULTIPLICAÇÃO
-4 - DIVISÃO
-5 - VOLTAR AO MENU PRINCIPAL
-================================
+        ================================
+        =======ESCOLHA A OPERAÇÃO=======
+        ================================
+        1 - ADIÇÃO
+        2 - SUBTRAÇÃO
+        3 - MULTIPLICAÇÃO
+        4 - DIVISÃO
+        5 - VOLTAR AO MENU PRINCIPAL
+        ================================
         """)
     while True:
         try:

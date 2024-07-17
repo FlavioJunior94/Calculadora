@@ -1,8 +1,8 @@
-from models import operacoes_simples, conversor_base, gerador_senha
+from models import operacoes_simples, conversor_base, gerador_senha, cotacao
 from time import sleep
 def menu():
     print("""
-        =========-=======================
+        =================================
         ==========CALCULADORA ==========
         ================================
         =======ESCOLHA A OPERAÇÃO=======
@@ -24,16 +24,40 @@ def menu():
 
     if op==1:
         operacoes_simples.menu_ops()
-    if op==2:
+    elif op==2:
         conversor_base.menu_base()
-    if op==3:
+    elif op==3:
+        #cotacao.cotar()
+        print(f"""
+        --COTACAO ATUAL (em Reais R$)---
+        | Dolar:{float(cotacao.cotar()[0]):.2f}
+        | Euro:{float(cotacao.cotar()[1]):.2f}
+        | BTC:{float(cotacao.cotar()[2]):.2f}
+        --------------------------------
+        """)
+        sleep(1)
+        while True:
+            try:
+                valor = float(input('Insira o valor em reais (R$): '))
+                break
+            except:
+                print('dado invalido! tente novamente.')
+
+        print(f"""
+        seu valor em:
+        Dolar: US$ {valor/float(cotacao.cotar()[0]):.2f}
+        Euro: € {valor/float(cotacao.cotar()[1]):.2f}
+        Bitcoin: ₿ {valor/float(cotacao.cotar()[2]):.2f}
+        
+        """)
+        sleep(3)
+        menu()
+    elif op==4:
         pass
-    if op==4:
-        pass
-    if op==6:
+    elif op==6:
         print('\n Volte sempre ! :)')
         exit()
-    if op==5:
+    elif op==5:
         while True:
             try:
                 tam_senha=int(input('Insira o tamanho da sua senha: '))
