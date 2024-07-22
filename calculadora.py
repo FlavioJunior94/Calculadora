@@ -1,4 +1,4 @@
-from models import operacoes_simples, conversor_base, gerador_senha, cotacao
+from models import operacoes_simples, conversor_base, gerador_senha, cotacao, bhaskara
 from time import sleep
 def menu():
     print("""
@@ -53,7 +53,18 @@ def menu():
         sleep(3)
         menu()
     elif op==4:
-        pass
+        while True:
+            try:
+                a_bhaskara=float(input('digite o valor de a: '))
+                b_bhaskara =float(input('digite o valor de b: '))
+                c_bhaskara =float(input('digite o valor de c: '))
+                break
+            except:
+                print('Dado Invalido! tente novamente.')
+        bhaskara.bhaskara(a_bhaskara,b_bhaskara,c_bhaskara)
+        sleep(1)
+        menu()
+
     elif op==6:
         print('\n Volte sempre ! :)')
         exit()
